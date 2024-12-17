@@ -8,11 +8,11 @@
     top: 15%;
     left:28%;
     margin: auto;
-    transform: translateY(800px);
+    // transform: translateY(800px);
     display: none;
     transition: .3s ease-in-out;
     .input{
-        width: 80%;
+        width: 90%;
         margin:10px auto;
         display: flex;
         align-items: center;
@@ -23,7 +23,7 @@
         border-bottom: blue 2px solid;
         input{
             margin-left: 1rem;
-            width: 80%;
+            width: 90%;
             padding: .5rem;
             background: transparent;
             border: none;
@@ -42,7 +42,7 @@
         align-items: center;
         padding: 1rem;
         font-size: small;
-        width: 80%;
+        width: 90%;
         margin: auto;
         a{
             text-decoration: none;
@@ -56,7 +56,7 @@
         }
     }
     .startapps{
-        width: 80%;
+        width: 90%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
@@ -77,11 +77,17 @@
         .apps{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            place-items: center;
+            align-items: center;
+            justify-content: center;
             .app{
                 display: flex;
                 gap: .5rem;
                 margin-bottom: 1rem;
+                padding-left: 5rem;
+            img{
+                width: 30px;
+                height: 30px;
+            }
             .content{
                 p{
                     font-size: 15px;
@@ -93,9 +99,29 @@
             }
         }
     }
+    .profile{
+        position: fixed;
+        bottom: 0;
+        padding: .5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: .5rem 5%;
+        .img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
 }
 .show{
-    transform: translateY(0px);
-    transition: .3s ease-in-out;
     display: block;
 }

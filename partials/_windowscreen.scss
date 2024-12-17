@@ -34,3 +34,22 @@
         }
     }
 }
+.lightMode{
+    // .container{
+    //     background-image: url(../images/default_light_compressed.jpg);
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     color: black;
+    //     .windowsapp{
+    //     .app:hover{
+    //             background-color: rgba(173, 173, 241, 0.329);
+    //             backdrop-filter: blur(3px);
+    //         }
+    //     }
+    // }
+    .startUpWindow{
+        background:linear-gradient(to top, #F1F5F8, #DEE3EF);
+        backdrop-filter:blur(2px);
+    }
+}

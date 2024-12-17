@@ -11,6 +11,7 @@ let seconds = now.getSeconds()
 function updateClock(){
     hours = hours <10 ? '0' + hours:hours;
     minutes = minutes <10 ? '0' + minutes:minutes;
+
     const timeString = `${hours}: ${minutes} PM`
     const clock = document.querySelector(".clock").textContent = timeString;
     const currentTime = document.querySelector(".currentTime").textContent = formattedDate
@@ -40,6 +41,12 @@ setInterval(()=>{
 
 const windows = document.querySelector(".windows")
 const starUpWindow = document.querySelector(".starUpWindow")
+const lightMode = document.querySelector(".lightMode")
+// const container = document.querySelector("container")
 windows.addEventListener("click", ()=>{
     starUpWindow.classList.toggle("show")
+})
+
+lightMode.addEventListener("click", ()=>{
+    starUpWindow.classList.toggle("lightMode")
 })
