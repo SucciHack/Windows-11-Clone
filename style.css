@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.container {
+  background-image: url(../images/default_dark_compressed.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  padding: 3rem;
+}
+.container .windowsapp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 20%;
+}
+.container .windowsapp .app {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: small;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .windowsapp .app .img {
+  width: 50px;
+  height: 50px;
+}
+.container .windowsapp .app .img img {
+  width: 100%;
+  display: block;
+}
+.container .windowsapp .app:hover {
+  background-color: rgba(173, 173, 241, 0.329);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}/*# sourceMappingURL=style.css.map */
