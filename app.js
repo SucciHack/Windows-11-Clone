@@ -43,6 +43,10 @@ const windows = document.querySelector(".windows")
 const starUpWindow = document.querySelector(".starUpWindow")
 const lightMode = document.querySelector(".lightMode")
 const container = document.querySelector(".container")
+const widget = document.querySelector(".widget")
+const widgetBtn = document.querySelector(".widgetBtn")
+const icons = document.querySelector(".icons")
+const notificationBar = document.querySelector("notificationBar")
 windows.addEventListener("click", ()=>{
     starUpWindow.classList.toggle("show")
 })
@@ -50,3 +54,20 @@ windows.addEventListener("click", ()=>{
 lightMode.addEventListener("click", ()=>{
     container.classList.toggle("lightMode")
 })
+widgetBtn.addEventListener("click", ()=>{
+    widget.classList.toggle("showWidget")
+})
+
+const inputPass = document.querySelector(".inputPass")
+const logIn = document.querySelector(".logIn")
+const logInForm = document.querySelector(".form")
+function verifyPassword(event){
+    event.preventDefault()
+    const password = inputPass.value
+    if(password === "Ch@ng3m3!"){
+        logIn.style.display = "none"
+    }else{
+        alert("incorrect password")
+    }
+}
+logInForm.addEventListener("submit", verifyPassword);

@@ -69,11 +69,44 @@ body {
 .lightMode .starUpWindow .input {
   background: white;
 }
+.lightMode .widget {
+  background-color: rgba(255, 255, 255, 0.699);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.lightMode .widget .flex .card1 {
+  background-color: rgba(255, 255, 255, 0.842);
+}
+.lightMode .widget .flex .card1 .head i {
+  background-color: rgb(180, 175, 175);
+}
+.lightMode .widget .card2 {
+  background-color: rgba(255, 255, 255, 0.842);
+}
+.lightMode .notificationBar {
+  background-color: rgba(255, 255, 255, 0.699);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.lightMode .notificationBar .notify p {
+  color: black;
+}
+.lightMode .notificationBar .buttons {
+  background-color: rgba(255, 255, 255, 0.801);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.lightMode .notificationBar .buttons button {
+  background-color: rgba(255, 255, 255, 0.699);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  color: black;
+}
 
 .taskBar {
   position: absolute;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: rgba(255, 252, 252, 0.562);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   width: 100%;
@@ -237,7 +270,189 @@ body {
   width: 100%;
   display: block;
 }
+.starUpWindow .profile i {
+  font-size: 1.5rem;
+}
+.starUpWindow .profile p {
+  margin-right: 340px;
+  font-size: small;
+}
 
 .show {
   display: block;
+}
+
+.widget {
+  background: rgba(0, 0, 0, 0.596);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: 93vh;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  padding: 2rem;
+  transform: translateX(-800px);
+  transition: 0.3s ease-in-out;
+}
+.widget .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.widget .flex .card1 {
+  background-color: #1C252E;
+  width: 50%;
+  height: 200px;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.widget .flex .card1 .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.widget .flex .card1 .head i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29384C;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.widget .flex .card1 .head .toronto {
+  margin-left: 3rem;
+}
+.widget .flex .card1 img {
+  width: 60px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.widget .flex .card1 .content p {
+  margin-right: 5px;
+}
+.widget .flex .card1 .content :nth-last-of-type(1) {
+  font-size: small;
+}
+.widget .card2 {
+  background-color: #1C252E;
+  width: 100%;
+  height: 100px;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.widget .card2 .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.widget .card2 .head i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29384C;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.widget .card2 .head .bxs-plus-circle {
+  background: none;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.showWidget {
+  transform: translateX(0px);
+  transition: 0.3s ease-in-out;
+}
+
+.notificationBar {
+  background-color: #171E25;
+  height: 90vh;
+  width: 25%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  color: white;
+}
+.notificationBar .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.notificationBar .buttons {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background: #1B2127;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.notificationBar .buttons button {
+  background: #272C33;
+  width: 100px;
+  height: 50px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: white;
+}
+.notificationBar .showNotification {
+  display: block;
+}
+
+.logIn {
+  background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.589)), url(../images/default_dark_compressed.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.logIn .img {
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logIn .img img {
+  width: 100%;
+  display: block;
+}
+.logIn input {
+  padding: 0.5rem 1rem;
+  width: 300px;
+  margin-top: 1rem;
+  border: none;
+}
+.logIn :focus {
+  outline: none;
+}
+.logIn p {
+  color: white;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

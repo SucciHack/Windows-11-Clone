@@ -1,0 +1,45 @@
+.notificationBar{
+    background-color: #171E25;
+    height: 90vh;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    color: white;
+    // display: none;
+    // transform: translateX(300px);
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50vh;
+    }
+    .buttons{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        background: #1B2127;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        button{
+            background: #272C33;
+            width: 100px;
+            height: 50px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+    .showNotification{
+        display: block;
+    }
+}
+

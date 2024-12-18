@@ -51,5 +51,40 @@
             background: white;
         }
     }
+    .widget{
+        background-color: rgba(255, 255, 255, 0.699);
+        backdrop-filter: blur(3px);
+        .flex{
+            .card1{
+                background-color: rgba(255, 255, 255, 0.842);
+                .head{
+                    i{
+                        background-color: rgb(180, 175, 175);
+                    }
+                }
+            }
+        }
+        .card2{
+            background-color: rgba(255, 255, 255, 0.842);
+        }
+    }
+    .notificationBar{
+        background-color: rgba(255, 255, 255, 0.699);
+        backdrop-filter: blur(3px);
+        .notify{
+            p{
+                color: black;
+            }
+        }
+        .buttons{
+            background-color: rgba(255, 255, 255, 0.801);
+            backdrop-filter: blur(3px);
+            button{
+                background-color: rgba(255, 255, 255, 0.699);
+                backdrop-filter: blur(3px);
+                color: black;
+            }
+        }
+    }
 }
 
