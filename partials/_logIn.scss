@@ -1,5 +1,6 @@
 .logIn{
     background:linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.589)) ,url(../images/default_dark_compressed.jpg);
+    display: block;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -31,5 +32,8 @@
     p{
         color: white;
         margin-top: .5rem;
+    }
+    @media (max-width: 900px) {
+        height: 100%;
     }
 }

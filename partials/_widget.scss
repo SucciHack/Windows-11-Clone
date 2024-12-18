@@ -87,6 +87,23 @@
         }
         
     }
+    @media (max-width: 900px) {
+        height: 100vh;
+    }
+    @media (max-width: 480px) {
+        width: 90%;
+        height: 90vh;
+        padding: 0;
+        flex{
+            display: block;
+        }
+        .head{
+            display: block;
+            p{
+                font-size: 8px;
+            }
+        }
+    }
 }
 .showWidget{
     transform: translateX(0px);

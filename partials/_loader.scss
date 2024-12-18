@@ -77,6 +77,18 @@
           background-position: 200%;
         }
       }
+      @media (max-width: 900px) {
+        height: 100vh;
+        .loader{
+            font-size: 10px;
+        }
+      }
+      @media (max-width: 480px) {
+        height: 100vh;
+        .loader{
+            font-size: 10px;
+        }
+      }
 }
 
 

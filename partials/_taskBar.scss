@@ -38,4 +38,42 @@
             margin-left: 2rem;
         }
     }
+    @media (max-width: 900px) {
+        height: 100px;
+        .startUp{
+            margin-left: 5rem;
+            gap: 0;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .time{
+            .icons{
+                font-size: 2rem;
+            }
+            .clockAnddata{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        height: 50px;
+        .startUp{
+            margin-left: 1rem;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .time{
+            .icons{
+                font-size: .5rem;
+            }
+            .clockAnddata{
+                font-size: .5rem;
+                display: none;
+            }
+        }
+    }
 }

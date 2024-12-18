@@ -34,6 +34,48 @@
             backdrop-filter: blur(3px);
         }
     }
+    @media (max-width: 900px) {
+        height: 100vh;
+        .windowsapp{
+            grid-template-columns: repeat(2, 1fr);
+            // padding: 0;
+            .app{
+                width: 200px;
+                .img{
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                p{
+                    margin-top: 3rem;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        height: 100vh;
+        .windowsapp{
+            height: 90%;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            .app{
+                width: 100%;
+                .img{
+                width: 40px;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                p{
+                    margin-top: 1rem;
+                    font-size: small;
+                }
+            }
+        }
+    }
 }
 .lightMode{
     background-image: url(../images/default_light_compressed.jpg);

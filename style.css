@@ -49,6 +49,49 @@ body {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
 }
+@media (max-width: 900px) {
+  .container {
+    height: 100vh;
+  }
+  .container .windowsapp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container .windowsapp .app {
+    width: 200px;
+  }
+  .container .windowsapp .app .img img {
+    width: 100%;
+    display: block;
+  }
+  .container .windowsapp .app p {
+    margin-top: 3rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    height: 100vh;
+  }
+  .container .windowsapp {
+    height: 90%;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container .windowsapp .app {
+    width: 100%;
+  }
+  .container .windowsapp .app .img {
+    width: 40px;
+  }
+  .container .windowsapp .app .img img {
+    width: 100%;
+    display: block;
+  }
+  .container .windowsapp .app p {
+    margin-top: 1rem;
+    font-size: small;
+  }
+}
 
 .lightMode {
   background-image: url(../images/default_light_compressed.jpg);
@@ -145,6 +188,44 @@ body {
 }
 .taskBar .time .clockAnddata {
   margin-left: 2rem;
+}
+@media (max-width: 900px) {
+  .taskBar {
+    height: 100px;
+  }
+  .taskBar .startUp {
+    margin-left: 5rem;
+    gap: 0;
+  }
+  .taskBar .startUp img {
+    width: 50px;
+    height: 50px;
+  }
+  .taskBar .time .icons {
+    font-size: 2rem;
+  }
+  .taskBar .time .clockAnddata {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .taskBar {
+    height: 50px;
+  }
+  .taskBar .startUp {
+    margin-left: 1rem;
+  }
+  .taskBar .startUp img {
+    width: 30px;
+    height: 30px;
+  }
+  .taskBar .time .icons {
+    font-size: 0.5rem;
+  }
+  .taskBar .time .clockAnddata {
+    font-size: 0.5rem;
+    display: none;
+  }
 }
 
 .starUpWindow {
@@ -277,6 +358,46 @@ body {
   margin-right: 340px;
   font-size: small;
 }
+@media (max-width: 900px) {
+  .starUpWindow {
+    bottom: 0;
+    left: 0;
+    height: 800px;
+    width: 800px;
+  }
+}
+@media (max-width: 480px) {
+  .starUpWindow {
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    width: 300px;
+  }
+  .starUpWindow .startapps {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    font-size: small;
+  }
+  .starUpWindow .startapps .startapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .starUpWindow .startapps .startapp img {
+    width: 20px;
+  }
+  .starUpWindow .recommended {
+    display: none;
+  }
+  .starUpWindow .profile {
+    display: none;
+  }
+}
 
 .show {
   display: block;
@@ -371,6 +492,27 @@ body {
   font-size: 1.5rem;
   color: blue;
 }
+@media (max-width: 900px) {
+  .widget {
+    height: 100vh;
+  }
+}
+@media (max-width: 480px) {
+  .widget {
+    width: 90%;
+    height: 90vh;
+    padding: 0;
+  }
+  .widget flex {
+    display: block;
+  }
+  .widget .head {
+    display: block;
+  }
+  .widget .head p {
+    font-size: 8px;
+  }
+}
 
 .showWidget {
   transform: translateX(0px);
@@ -388,7 +530,7 @@ body {
   margin-right: 1rem;
   border-radius: 5px;
   color: white;
-  transform: translateY(-800px);
+  display: none;
 }
 .notificationBar .heading {
   display: flex;
@@ -417,12 +559,19 @@ body {
   font-size: 1.5rem;
   color: white;
 }
+@media (max-width: 900px) {
+  .notificationBar {
+    bottom: 0;
+    width: 45%;
+  }
+}
 .notificationBar .showNotification {
   transform: translateY(0px);
 }
 
 .logIn {
   background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.589)), url(../images/default_dark_compressed.jpg);
+  display: block;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -456,6 +605,11 @@ body {
 .logIn p {
   color: white;
   margin-top: 0.5rem;
+}
+@media (max-width: 900px) {
+  .logIn {
+    height: 100%;
+  }
 }
 
 .loaderContainer {
@@ -511,5 +665,21 @@ body {
   }
   100% {
     background-position: 200%;
+  }
+}
+@media (max-width: 900px) {
+  .loaderContainer {
+    height: 100vh;
+  }
+  .loaderContainer .loader {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .loaderContainer {
+    height: 100vh;
+  }
+  .loaderContainer .loader {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
