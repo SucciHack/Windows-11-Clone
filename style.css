@@ -412,7 +412,7 @@ body {
   position: absolute;
   top: 0;
   padding: 2rem;
-  transform: translateX(-800px);
+  transform: translateX(-1000px);
   transition: 0.3s ease-in-out;
 }
 .widget .flex {
