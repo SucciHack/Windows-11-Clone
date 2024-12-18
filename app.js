@@ -9,7 +9,7 @@ let minutes = now.getMinutes()
 let seconds = now.getSeconds()
 
 function updateClock(){
-    hours = hours <10 ? '0' + hours:hours;
+    // hours = hours <10 ? '0' + hours:hours;
     // minutes = minutes <10 ? '0' + minutes:minutes;
 
     const timeString = `${hours}: ${minutes} PM`
@@ -47,6 +47,12 @@ const widget = document.querySelector(".widget")
 const widgetBtn = document.querySelector(".widgetBtn")
 const icons = document.querySelector(".icons")
 const notificationBar = document.querySelector("notificationBar")
+const chevronUp = document.querySelector(".bx-chevron-up")
+
+chevronUp.addEventListener("click", ()=>{
+    notificationBar.classList.toggle("showNotification")
+})
+
 windows.addEventListener("click", ()=>{
     starUpWindow.classList.toggle("show")
 })
@@ -57,17 +63,22 @@ lightMode.addEventListener("click", ()=>{
 widgetBtn.addEventListener("click", ()=>{
     widget.classList.toggle("showWidget")
 })
-
+const loaderContainer = document.querySelector(".loaderContainer")
 const inputPass = document.querySelector(".inputPass")
 const logIn = document.querySelector(".logIn")
 const logInForm = document.querySelector(".form")
 function verifyPassword(event){
     event.preventDefault()
     const password = inputPass.value
-    if(password === "Ch@ng3m3!"){
+
+    if(password === inputPass.value){
         logIn.style.display = "none"
+        setTimeout(()=>{
+            loaderContainer.style.display = "none"
+        }, 3000)
     }else{
         alert("incorrect password")
     }
+
 }
 logInForm.addEventListener("submit", verifyPassword);
